@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name]'s Portfolio</title>
+    <title>KAPIL PATIL</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-        
             margin: 0;
             padding: 0;
             background-color: #000000;
             color: #f0eaea;
+        }
+        img{
+            opacity: 0.01;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
         }
 
         header {
@@ -37,7 +42,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 0 20px;
         }
@@ -57,7 +62,7 @@
 
         ul {
             padding: 0;
-            margin: 0;
+            margin-left: 40px;
         }
 
         li {
@@ -72,12 +77,23 @@
         a:hover {
             text-decoration: underline;
         }
+        #projects
+        {
+            display: flex;
+            flex-wrap:nowrap;
+            flex-direction:row;
+            justify-content: center;
 
+        }
+
+        
         .project {
+            color: #000000;
+            max-width: 400px;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
-            margin-bottom: 20px;
+            margin: 20px;
         }
 
         .project h3 {
@@ -95,6 +111,7 @@
 </head>
 <body>
     <header>
+        <h1>KAPIL PATIL</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -106,13 +123,13 @@
                 <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
-        <h1>KAPIL PATIL</h1>
+        
     </header>
 
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p><section id="about">
+            <p><section id="about"style="margin-left: 20px" >
                 <p>Hey there! I'm KAPIL PATIL, co-founder of Neural Kissan & passionate developer. I have a strong inclination towards innovation and enjoy bringing ideas to life through technology. With a background in electronics, I'm well-versed in hardware platforms like Arduino, ESP32, and other embedded systems. I thrive on exploring new possibilities and pushing the boundaries of what's possible in the digital world.</p>
             </section>
             </p>
@@ -120,33 +137,47 @@
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: [List of languages]</li>
-                <li>Web Development: HTML, CSS, JavaScript, React, Angular, Vue.js</li>
-                <li>Backend Development: Node.js, Express, Django, Flask</li>
-                <li>Database: SQL (MySQL, PostgreSQL), NoSQL (MongoDB)</li>
-                <li>Tools & Technologies: Git, Docker, AWS, Heroku</li>
-            </ul>
+             <ul >
+                 <li>Programming Languages:C++,Python</li>
+                 <li>Web Development: HTML, CSS, JavaScript </li>
+                 <li>Backend Development: Node.js, Express, Django, Flask</li>
+                 <li>Database: SQL (MySQL, PostgreSQL)</li>
+                 <li>Tools & Technologies: Git, AWS, VScode & Pycharm </li>
+             </ul>
         </section>
 
+        <h2>Projects</h2>    
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>[Project Title]</h3>
-                <p><strong>Description:</strong> Brief overview of the project.</p>
-                <p><strong>Technologies Used:</strong> List of technologies/languages used.</p>
+            <div class="project" style=" background-image: url('asset/OIP\ \(2\).jpg') ">
+                <h3 style="font-weight: bold;">Event Management System</h3>
+                <p><strong>Description:</strong>For events to be successful, a college event management system expedites volunteer coordination, scheduling, registration, ticketing, promotion, communication, and analytics. This increases student engagement.</p>
+                <p>Developed a comprehensive event management system using PHP, CSS, HTML &JavaScript.</p>
+                <p>Implemented features for event scheduling, registration, ticketing, and user authentication.</p>
                 <p><strong>Link:</strong> <a href="#">Link to the project (GitHub repository or live demo)</a></p>
             </div>
+
+            <div class="project">
+                <h3>Biometric Attendance System</h3>
+                <p><strong>Description:</strong>Project involves developing a biometric attendance system utilizing ESP32 microcontroller and a biometric sensor. This system aims to streamline attendance tracking by capturing biometric data for authentication, offering a more secure and efficient alternative to traditional methods</p>
+                <p> 
+                    <li>Designed and developed a biometric attendance system using ESP32 microcontroller and a biometric sensor.</li>
+                    <li>ESP32 microcontroller for hardware interfacing and sensor communication.</li> 
+                	<li>Integrated software components with PHP, CSS, HTML, and JavaScript for user interface and backend functionality</li>
+                </p>
+                
+                <p><strong>Link:</strong> <a href="#"></a></p>
+            </div>
+
 
             <!-- Repeat this block for each project -->
         </section>
 
         <section class="experience" id="experience">
             <h2>Experience</h2>
-            <div>
-                <h3>[Company Name] - [Position]</h3>
-                <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
-                <p><strong>Description:</strong> Brief description of your role and responsibilities.</p>
+            <div style="margin-left: 40px;">
+                <h3>Co-founder of Neural Kissan</h3>
+                <p><strong>Duration:</strong> 2022</p>
+                <p><strong>Description:</strong> </p>
             </div>
 
             <!-- Repeat this block for each experience -->
@@ -154,8 +185,8 @@
 
         <section class="education" id="education">
             <h2>Education</h2>
-            <ul>
-                <li>[Degree], [Major] - [University Name], [Year]</li>
+            <ul >
+                <li></li>
                 <li>[Degree], [Major] - [University Name], [Year]</li>
             </ul>
         </section>
