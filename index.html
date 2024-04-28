@@ -24,8 +24,13 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-
+        
+        
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -40,12 +45,15 @@
             color: #fff;
             text-decoration: none;
         }
+     
 
         .container {
+           
             max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 20px;
+            margin: 110px auto;
+            padding: 20px 40px;
         }
+        
 
         h1, h2, h3 {
             margin-bottom: 20px;
@@ -80,13 +88,38 @@
         #projects
         {
             display: flex;
-            flex-wrap:nowrap;
+            flex-wrap:wrap;
             flex-direction:row;
             justify-content: center;
+          
+        
+        }
+        .hero-banner{
+            padding-left: 100px;
+        }
+        
+       
+       #profile.img{
+        opacity: 2.0;
+       }
+       #profile{
+    
+         font-family: 'Courier New', Courier, monospace;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         width:max-content;
+         background-color:#22a8f0a9;
+       }
+        #qoute{
+        display:flex;
+        font-size:40px;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
 
         }
-
-        
         .project {
             color: #000000;
             max-width: 400px;
@@ -94,6 +127,9 @@
             border-radius: 5px;
             padding: 10px;
             margin: 20px;
+            background-repeat: no-repeat;
+            background-size:cover;
+           
         }
 
         .project h3 {
@@ -107,6 +143,10 @@
         .experience, .education, .contact, .resume h2 {
             color: #007bff;
         }
+        .hero {
+  padding-block-start: calc(var(--section-padding) + 50px);
+  text-align: center;
+}
     </style>
 </head>
 <body>
@@ -126,10 +166,30 @@
         
     </header>
 
+    
+        <div class=" ">
+        <section id="profile" >
+            <p>
+              <section id="qoute">
+                    <p >
+                        Building Dreams 
+                    </p>
+                    <p>
+                        Through Code and Innovation
+                    </p>
+                </section> 
+                <figure class="hero-banner">
+                    <img style=" opacity:1;" src="asset/profile-pic.png"  width="400"height="400" alt="hero banner" style="height: 400px; width:600px;" class="w-100">
+                </figure>
+
+            </p>
+
+        </section>
+    </div>
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p><section id="about"style="margin-left: 20px" >
+            <p><section id="about" style="margin-left: 20px" >
                 <p>Hey there! I'm KAPIL PATIL, co-founder of Neural Kissan & passionate developer. I have a strong inclination towards innovation and enjoy bringing ideas to life through technology. With a background in electronics, I'm well-versed in hardware platforms like Arduino, ESP32, and other embedded systems. I thrive on exploring new possibilities and pushing the boundaries of what's possible in the digital world.</p>
             </section>
             </p>
@@ -148,7 +208,7 @@
 
         <h2>Projects</h2>    
         <section id="projects">
-            <div class="project" style=" background-image: url('asset/OIP\ \(2\).jpg') ">
+            <div class="project" style=" background-image: url('asset/OIP.jpg') ">
                 <h3 style="font-weight: bold;">Event Management System</h3>
                 <p><strong>Description:</strong>For events to be successful, a college event management system expedites volunteer coordination, scheduling, registration, ticketing, promotion, communication, and analytics. This increases student engagement.</p>
                 <p>Developed a comprehensive event management system using PHP, CSS, HTML &JavaScript.</p>
@@ -156,7 +216,7 @@
                 <p><strong>Link:</strong> <a href="#">Link to the project (GitHub repository or live demo)</a></p>
             </div>
 
-            <div class="project">
+            <div class="project" style=" background-image: url('asset/Telpo-TPS980-face-recognition-machine.jpg') ">
                 <h3>Biometric Attendance System</h3>
                 <p><strong>Description:</strong>Project involves developing a biometric attendance system utilizing ESP32 microcontroller and a biometric sensor. This system aims to streamline attendance tracking by capturing biometric data for authentication, offering a more secure and efficient alternative to traditional methods</p>
                 <p> 
@@ -194,9 +254,9 @@
         <section class="contact" id="contact">
             <h2>Contact Me</h2>
             <ul>
-                <li><strong>Email:</strong> [Your Email Address]</li>
-                <li><strong>LinkedIn:</strong> <a href="#">Your LinkedIn Profile URL</a></li>
-                <li><strong>GitHub:</strong> <a href="#">Your GitHub Profile URL</a></li>
+                <li><strong>Email:</strong> patilkapil96kp5@gmail.com</li>
+                <li><strong>LinkedIn:</strong> <a href="https://in.linkedin.com/in/kapil-patil-18a400245">KAPIL PATIL</a></li>
+                <li><strong>GitHub:</strong> <a href="#">GitHub</a></li>
             </ul>
         </section>
 
