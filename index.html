@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAPIL PATIL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +14,7 @@
             padding: 0;
             background-color: #000000;
             color: #f0eaea;
+          
         }
         img{
             opacity: 0.01;
@@ -21,36 +25,28 @@
 
         header {
             background-color: #007bff;
+            display: flex;
+            flex-direction: row;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 0.7rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
         }
-        
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        header h1{
+            justify-content: center;
+            padding-left:10px;
+            font-size: medium;
+            font-family: "Lugrasimo", cursive;
         }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+      
      
 
         .container {
-           
-            max-width: 1000px;
-            margin: 110px auto;
+            
+            margin-top:140px;
             padding: 20px 40px;
         }
         
@@ -95,22 +91,47 @@
         
         }
         .hero-banner{
-            padding-left: 100px;
+            padding: auto;
         }
-        
-       
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+       .home{
+        margin: auto;
+        width:100%;
+        padding-top: 80px;
+        background-color:#22a8f0a9;
+
+            }
        #profile.img{
         opacity: 2.0;
        }
        #profile{
     
-         font-family: 'Courier New', Courier, monospace;
+        font-family: "Lugrasimo", cursive;
          display: flex;
          flex-direction: row;
          flex-wrap: wrap;
+         margin: auto;
          width:max-content;
-         background-color:#22a8f0a9;
+         
        }
+       .lugrasimo-regular {
+         font-family: "Lugrasimo", cursive;
+         font-weight: 400;
+         font-style: normal;
+}
+
         #qoute{
         display:flex;
         font-size:40px;
@@ -147,6 +168,11 @@
   padding-block-start: calc(var(--section-padding) + 50px);
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+            .container {
+                margin-top: 150px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -167,7 +193,7 @@
     </header>
 
     
-        <div class=" ">
+        <div class="home">
         <section id="profile" >
             <p>
               <section id="qoute">
@@ -225,7 +251,7 @@
                 	<li>Integrated software components with PHP, CSS, HTML, and JavaScript for user interface and backend functionality</li>
                 </p>
                 
-                <p><strong>Link:</strong> <a href="#"></a></p>
+                <p><strong>Link:</strong> <a href="https://github.com/kapil-pa/biometric-attendance-system-using-esp32">github repo</a></p>
             </div>
 
 
@@ -235,9 +261,9 @@
         <section class="experience" id="experience">
             <h2>Experience</h2>
             <div style="margin-left: 40px;">
-                <h3>Co-founder of Neural Kissan</h3>
-                <p><strong>Duration:</strong> 2022</p>
-                <p><strong>Description:</strong> </p>
+                <h2>Currently</h2>
+                    <h3>Co-founder of Neural Kissan</h3>
+                    <p><strong>Description:</strong> <br>Neural Kissan's co-founder, oversees electrical and product structural design,<br> ensuring innovation and reliability. </p>
             </div>
 
             <!-- Repeat this block for each experience -->
@@ -246,8 +272,8 @@
         <section class="education" id="education">
             <h2>Education</h2>
             <ul >
-                <li></li>
-                <li>[Degree], [Major] - [University Name], [Year]</li>
+                <li>Bachelor of Engineering , Computer Engineering, Don Bosco College of Engineering- Goa, 2025</li>
+               
             </ul>
         </section>
 
